@@ -1,0 +1,208 @@
+body{
+    font: Arial, Helvetica, sans-serif;
+}
+/*html, body{*/
+/*    height: 100%;*/
+/*}*/
+#container {
+    width:1100px;
+/*    border: 1px solid grey;*/
+/*   height: 100px;*/
+    margin: 0 auto;
+/*    the Top and bottom margin is 0 and LHS and RHS is auto.*/
+/*    height: 100% gives the element 100% height of its parent container. height: auto means the element height will depend upon the height of its children.*/
+}
+
+h1 a{
+    font-size: 50px;
+    font-weight: 100;
+    color: #bc0f66;
+    text-decoration:none;
+}
+#header{
+    height: 100px;
+/*  border: 10px solid red;*/
+    padding: 10px 0;
+}
+
+#brand{
+    float:left;
+    font-family: sans-serif;
+}
+
+#searchbox{
+    float: right;
+    background: linear-gradient(#084ebd, #1cce69);
+    background: -webkit-linear-gradient(#084ebd, #1cce69);
+/*    for safari*/
+    background: -o-linear-gradient(#084ebd, #1cce69);
+    background: -moz-linear-gradient(#084ebd, #1cce69);
+    width: 400px;
+    height: 50px;
+    padding: 20px 20px 0px 20px;
+    margin-top: 20px
+    
+}
+.clear{
+    clear:both;
+}
+.text{
+    float: left;
+    width: 200px;
+    padding: 5px;
+    font-size: 15px;
+    color: #56079b;
+    background: white url(images/logo.png) right center no-repeat;
+/*    horizontal right and vertically center*/
+    border: 1px solid #C8D03E;
+}
+.submit{
+    float: right;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    background: purple;
+    font-size: 15px;
+}
+/*We cant use background-color property for buttons*/
+ul{
+    list-style: none;
+}
+
+#menu{
+    height:70px;
+    background: linear-gradient(#c3ab0d, #ead96a);
+    background: -webkit-linear-gradient(#c3ab0d, #ead96a);
+    background: -o-linear-gradient(#c3ab0d, #ead96a);
+    background: -moz-linear-gradient(#c3ab0d, #ead96a);
+    padding: 7px 0;
+    
+}
+#menu ul li{
+    float: left;
+    padding: 0 50px;
+    height: 30px;
+    border-right: 1.5px solid red;
+    
+    
+}
+#menu ul li:last-child{
+    border-right: none;
+}
+#menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: serif;
+    font-weight: bold;
+    color:#0e326c;
+    line-height: 30px;
+    transition: font-size 0.3s ease;
+/*    linear-means transition timing function i.e., the speed of the transition is same from begining to the end.*/
+/*    ease- speed starts slow and then become fast and ends slow.*/
+    -webkit-transition: font-size 0.3s ease;
+/*    for safari*/
+    -moz-transition: font-size 0.3s ease;
+/*    for mozilla.*/
+    -o-transition: font-size 0.3s ease;
+/*    for opera*/
+    -ms-transition: font-size 0.3s ease;
+/*    for IE*/
+    
+    
+}
+#menu ul li a:hover, #menu ul li a.active{
+    font-size: 20px;
+    font-weight:bold;
+    color:#e24f4f;
+}
+
+#introduction{
+    background: linear-gradient(#E5F2BB, #B7E952);
+    padding: 30px;
+    margin: 20px 0;
+}
+#introduction h3{
+    font-size: 45px;
+    color: #0e5f6c;
+    font-weight: normal;
+    
+}
+#introduction p{
+    font-size: 25px;
+    color: #061e97;
+    text-align: justify;
+}
+.sidebar{
+    height:500px;
+    width: 475px;
+    border: 2px solid #da8985;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+#leftsidebar{
+    float:left;
+}
+#rightsidebar{
+    float:right;
+}
+.sidebar h3{
+    color: #451484;
+    font-size: 30px;
+    
+}
+#leftsidebar ul li{
+/*     padding-bottom: 10px;*/
+/*    padding-top: 10px;*/
+    padding: 10px 0px 19px 20px;
+    list-style-image: url(images/arrow.png);
+/*    padding-left: 20px;*/
+    
+}
+
+#rightsidebar ul li{
+/*    padding-left:30px;*/
+/*    padding-bottom: 10px;*/
+/*    padding-top: 10px;*/
+    padding: 10px 0px 19px 30px;
+    list-style-image: url(images/arrow2.png); 
+/*    background: url(images/arrow2.png) no-repeat left center;this is one way using background property is another way*/
+ 
+}
+.sidebar ul{
+    padding-top: 9px;
+}
+
+.sidebar ul li a{
+    text-decoration:none;
+    font-size:20px;
+    color: #501606;
+    transition: font-size 0.3s ease;
+   -moz- transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -webkit-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+}
+.sidebar ul li a:hover, .sidebar ul li a:active{
+    font-size: 25px;
+    color:#f71616;
+}
+
+.footer{
+    height:60px;
+    background: linear-gradient(#F6F390, #D5D533);
+    background: -webkit-linear-gradient(#F6F390, #D5D533);
+    background: -o-linear-gradient(#F6F390, #D5D533);
+    background: -moz-linear-gradient(#F6F390, #D5D533);
+    padding: 10px 50px;
+    margin-top: 15px;
+    
+}
+
+#leftsidebar h3{
+    background: url(images/finger.png) no-repeat left center;
+    background-position: 180px;
+    
+}
+/*The default values are 0 0. This places your background image at the top left of the container.*/
+/*Length values are pretty simple: the first value is the horizontal position, second value is the vertical position. So 100px 5px will move the image 100px to the right and five pixels down. You can set length values in px, em, or any of the other CSS length values.*/

@@ -1,0 +1,14 @@
+
+
+.card{
+    height:400px;
+    overflow: hidden;
+}
+
+.card-image{
+    height: 200px;
+    overflow: hidden;
+}
+a:hover{
+    color: blue;
+}

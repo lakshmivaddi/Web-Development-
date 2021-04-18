@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Apparels</th>
+                <th>Stock</th>
+                <th>Orders</th>
+            </tr>
+        </thead>
+    <tbody>
+        {% for h in homes %}
+        <tr>
+
+            <td><a href="{% url 'apparels:details' h.id %}">{{ h.name }}</a></td>
+            <td>{{ h.apparel }}</td>
+            <td>{{ h.stock }}</td>
+            <td>{{ h.orders }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+{% endblock %}
